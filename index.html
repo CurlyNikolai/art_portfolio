@@ -9,14 +9,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
 <style>
-    body,
+    body {
+        font-family: "Montserrat", sans-serif
+    }
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-        font-family: "Montserrat", sans-serif
+        font-family: "Mrs Saint Delafield", sans-serif
     }
 
     .w3-row-padding img {
@@ -26,75 +28,74 @@
     hr.new1 {
         border-top: 1px solid black;
     }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    /* #main {
-        margin-left: 120px
-    } */
-
-    /* Remove margins from "page content" on small screens */
-    /* @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
-    } */
 </style>
 
 <body class="w3-light-grey">
 
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top" id="myNavbar">
+    <div class="w3-top">
         <div class="w3-bar w3-grey w3-opacity-min w3-hover-opacity-max w3-center">
-            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#art" class="w3-bar-item w3-button" style="width:25% !important">ART</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button" style="width:33.33% !important">HOME</a>
+            <a href="#art" class="w3-bar-item w3-button" style="width:33.33% !important">ART</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:33.33% !important">CONTACT</a>
         </div>
     </div>
+    <br><br>
+    <div class="w3-content" style="max-width:1500px;">
 
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-        
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-light-grey w3-cell-row" id="home">
-            <div class="w3-container w3-cell w3-cell-middle" style="width:50%">
-                <img src="images/pappan_och_pojken.jpg" alt="pappan_och_pojken" class="w3-image" width="800" height="800">
+        <header class="w3-container w3-xlarge w3-padding-24">
+            <div class="w3-container w3-cell w3-cell-middle w3-hide-small" style="width:50%">
+                <img src="images/pappan_och_pojken.jpg" alt="pappan_och_pojken" class="w3-image"
+                    style="width:100%;max-width:500px;max-height:1000px;">
             </div>
             <div class="w3-container w3-cell w3-cell-middle" style="width:50%">
-                <h1 class="w3-jumbo" style="font-family:Mrs Saint Delafield;">Wilhelmsson Art</h1>
+                <h1 class="w3-jumbo" style="text-align:center;">Wilhelmsson Art</h1>
                 <p style="text-align:justify;">
                     Grattis på födelsedagen! <i class="fa-solid fa-heart" style="color:#F79BB4"></i>
                     <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </header>
-
- 
+    
+            
         <!-- Portfolio Section -->
-        <div class="w3-content w3-text-black w3-padding-64" id="art">
-            <h2>Art</h2>
+        <div class="w3-container w3-padding-64" id="art">
+            <h2 class="w3-jumbo">Art</h2>
             <hr style="width:200px;" class="new1">
             
+            <!-- Photo Grid -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <img src="images/pappan_och_pojken.jpg" style="width:100%">
+                    <img src="images/penslar.jpg" style="width:100%">
+                    <img src="images/calm.jpg" style="width:100%">
+                    <img src="images/greenvibes.jpg" style="width:100%">
+                </div>
             
+                <div class="w3-half">
+                    <img src="images/gulls.jpg" style="width:100%">
+                    <img src="images/pink-skies.jpg" style="width:100%">
+                    <img src="images/winterday.jpg" style="width:100%">
+                    <img src="images/flowers.jpg" style="width:100%">
+                </div>
+            </div>
 
         <!-- End Portfolio Section -->
         </div>
         
         
         <!-- Contact Section -->
-        <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-            <h2>Contact Me</h2>
+        <div class="w3-container w3-padding-64" id="contact">
+            <h2 class="w3-jumbo">Contact Me</h2>
             <hr style="width:200px" class="new1">
         
             <div class="w3-section">
@@ -105,17 +106,16 @@
         </div>
 
         <!-- Footer -->
-        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <footer class="w3-container w3-padding-64 w3-text-grey w3-xlarge">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
             <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
                     class="w3-hover-text-green">w3.css</a></p>
             <!-- End footer -->
         </footer>
 
-        <!-- END PAGE CONTENT -->
     </div>
 
 </body>
-
 </html>
